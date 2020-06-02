@@ -1,28 +1,50 @@
-<!DOCTYPE html>
+t<!DOCTYPE html>
 <html>
-<head>
-<style>
-.myDiv {
-  border: 5px outset black;
-  background-color: lightblue;    
-  text-align: center;
-}
-</style>
-</head>
-<body>
-<script>
-alert("Hello World");
-</script>
-
-<h1>Welcome to my Website</h1>
-
-<div class="myDiv">
-  <h2>Interesting stuff are the ones you search for!</h2>
-  <p>So lose your calm and search.</p>
-</div>
-
-<p>Enthusiasm</p>
-<a href="https://www.google.com/">Visit Google</a>
-
-</body>
+    <head>
+        <style>
+        .myDiv {
+        border: 5px outset black;
+        background-color: lightblue;    
+        text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+            <h1 id="test">Welcome to my Website</h1>
+            <p>This is 1st P tag</p>
+            <p>This is 2nd p tag</p>
+            <div class="myDiv">
+                <h2>Interesting stuff are the ones you search for!</h2>
+                <p>So lose your calm and search.</p>
+            </div>
+            <p>Enthusiasm</p>
+            <a href="https://www.google.com/">Visit Google</a>
+            <h1>
+                Script Results
+            </h1>
+            <h3>
+                Your Input :
+                <p id="user_name"></p>
+            </h3>
+            <h3>
+                Number of "P" tags in the document :
+                <br>
+                <p id="lenght_of_p"></p>
+            </h3>
+            <h3>
+                all the inner html of all p tags in the document :
+            </h3>
+            <script>
+                var name;
+                var i;
+                name=prompt("What is your name?");
+                document.getElementById("user_name").innerHTML = name;
+                var pars = document.getElementsByTagName("p");
+                document.getElementById("lenght_of_p").innerHTML = pars.length;
+            
+                for (i = 0; i < pars.length; i++) {
+                    document.write( "<h3>"+ pars[i].innerHTML + "</h3>");
+                }
+            </script> 
+    </body>
 </html>
