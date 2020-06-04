@@ -1,0 +1,55 @@
+<html>
+<head>
+ <title>Personal Details</title>
+ <style>
+  body {background-color:powderblue;
+        font-size:110%;
+        font-family: verdana;
+    }
+ </style>
+ <script src="./form.js"></script>
+</head>
+<body>
+ <h1 style="color:blue;">&nbsp;&nbsp;Personal Details Entry Form</h1>
+ <form novalidate>
+  <label for ="name">&nbsp;&nbsp;First Name:&nbsp;</label>&nbsp;&nbsp;
+  <input type="text" name="name" id="name" value="Alexanderia"><br><br>
+  <label for ="name">&nbsp;&nbsp;Middle Name:&nbsp;</label>&nbsp;&nbsp;
+  <input type="text" name="name" id="name" value="Marie"><br><br>
+  <label for ="name">&nbsp;&nbsp;Last Name:&nbsp;</label>&nbsp;&nbsp;
+  <input type="text" name="name" id="name" value="Jerald"><br><br>
+  
+  <label>&nbsp;&nbsp;DOB:&nbsp;</label>
+  <input type="date" name="date" ><br><br>
+  <label for ="mail_addr">&nbsp;&nbsp;E-mail:&nbsp;</label>&nbsp;&nbsp;
+  <input type="email" name="email" id="mail_addr" value="xyz@outlook.com"><br><br>
+
+  <label for ="mail_repeat">&nbsp;&nbsp;Confirm E-mail:&nbsp;</label>&nbsp;&nbsp;
+  <input type="email" name="email" id="mail_repeat" value="xyz@outlook.com" onchange="check()"><br><br>
+
+  <label for ="pass">&nbsp;&nbsp;Password:&nbsp;</label>&nbsp;&nbsp;
+  <input type="password" name="password" id="pass" required><br><br>
+  <label for ="gender">&nbsp;&nbsp;Gender:&nbsp;</label>&nbsp;&nbsp;<br><br>
+  <input type="radio" name="gender" id="gender">&nbsp;Male<br><br>
+  <input type="radio" name="gender" checked="true" id="gender">&nbsp;Female<br><br>
+  <input type="radio" name="gender" id="gender">&nbsp;Trans<br><br>
+  <label>&nbsp;&nbsp;Documents available for proof: &nbsp;</label>&nbsp;&nbsp;<br><br>
+  <input type="checkbox" name="document">&nbsp;Aadhar Card<br><br>
+  <input type="checkbox" name="document">&nbsp;Driving License <br><br>
+  <input type="checkbox" name="document">&nbsp;10std Grade Card <br><br>
+  <input type="checkbox" name="document">&nbsp;12std Grade Card <br><br>
+  <label>Phone Number:&nbsp;</label>
+  <input type="number" name="number" placeholder="(123)-456-7890"><br><br>
+  <label>Experience Level in field of Medicine:&nbsp;</label>
+  <input type="range" name="range" ><br><br>
+  <label>Experience Level in field of Pharma:&nbsp;</label>
+  <input type="range" name="range" ><br><br>
+  <label>Experience Level in field of Engineering:&nbsp;</label>
+  <input type="range" name="range" ><br><br>
+  <label>Tell Us your Favourite Color:&nbsp;</label>
+  <input type="color" name="color" ><br><br>
+  <input type="submit" name="submit" value="Submit" onclick="return.check()"><br><br>
+ </form>
+ <p></p>
+ </body>
+ </html>
